@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+// import Home from './Home';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Andre Thomas</h1>
+        {/* <Home /> */}
       </React.Fragment>
     );
   }
