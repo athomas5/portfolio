@@ -1,9 +1,10 @@
 .navbar-link-component {
   font-size: 32px;
   font-weight: 600;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   padding-bottom: 10px;
   border-bottom: 2px solid transparent;
+  text-transform: uppercase;
   cursor: pointer;
 
   &:hover {

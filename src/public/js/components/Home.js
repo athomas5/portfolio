@@ -8,6 +8,7 @@ const Home = ({ onClick }) => {
       <div className="main-content-wrapper">
         <div className="main-container">
           <h1 className="header">Andre Thomas</h1>
+          <h2 className="kicker">Software Engineer | UI/UX Developer</h2>
           <Navbar onClick={onClick} />
         </div>
       </div>
