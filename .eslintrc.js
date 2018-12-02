@@ -19,6 +19,7 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "no-console": 1,
         "indent": [
             "error",
             2
@@ -27,10 +28,10 @@ module.exports = {
             "error",
             "unix"
         ],
-        "quotes": [
-            "error",
-            "single"
-        ],
+        // "quotes": [
+        //     "error",
+        //     "single",
+        // ],
         "semi": [
             "error",
             "always"

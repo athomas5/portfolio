@@ -1,0 +1,15 @@
+.navbar-link-component {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: lightcoral;
+    border-color: lightcoral;
+    transition: .5s color ease-in-out;
+    transition: .5s border-color ease-in-out;
+  }
+}

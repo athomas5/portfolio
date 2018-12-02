@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-// import Home from './Home';
+import SiteContainer from './SiteContainer';
 
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        {/* <Home /> */}
-      </React.Fragment>
+      <SiteContainer />
     );
   }
 }
