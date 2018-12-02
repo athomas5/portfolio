@@ -1,4 +1,5 @@
 import React from 'react';
+import profile from '../../assets/images/profile.jpg';
 
 const About = () => {
   return (
@@ -8,10 +9,15 @@ const About = () => {
           <h1 className="header">About</h1>
           <div className="underline"></div>
         </div>
-        <div className="text-container">
-          <p>Software Engineer with a passion for developing responsive web applications while focusing on usability, clean code, and best practices.</p>
-          <br/>
-          <p>Experienced using modern workflows and tools including JavaScript, React, Angular, HTML, CSS, Gulp and others. Comfortable with Git workflow, agile development methodologies, and test-driven development.</p>
+        <div className="profile-text-wrapper">
+          <div className="profile-container">
+            <img className="profile" src={profile} alt="Profile Picture"/>
+          </div>
+          <div className="text-container">
+            <p><strong>Software Engineer</strong> with a passion for developing responsive web applications while focusing on usability, clean code, and best practices.</p>
+            <br/>
+            <p>Experienced using modern workflows and tools including <strong>JavaScript, React, Angular, HTML, CSS, Gulp and others</strong>. Comfortable with Git workflow, agile development methodologies, and test-driven development.</p>
+          </div>
         </div>
       </div>
     </section>

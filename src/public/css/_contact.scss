@@ -18,8 +18,7 @@
   }
 
   .contact-text {
-    font-size: 16px;
-    line-height: 1.3em;
+    @include section-text();
   }
 
   .contact-link {
