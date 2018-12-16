@@ -8,7 +8,9 @@ class SiteContainer extends Component {
   constructor(props) {
     super(props);
     this.state = { activeSection: 'home-active' };
+
     this.navbarLinkClick = this.navbarLinkClick.bind(this);
+    this.backButtonClick = this.backButtonClick.bind(this);
   }
 
   navbarLinkClick(e) {
@@ -17,14 +19,18 @@ class SiteContainer extends Component {
     if (e.target.id === 'contact-link') { this.setState({ activeSection: 'contact-active' }); }
   };
 
+  backButtonClick() {
+    this.setState({ activeSection: 'home-active' });
+  }
+
   render() {
     return (
       <div className="site-container-component">
         <div className={`sc-belt ${this.state.activeSection}`}>
-          <About />
+          <About onClick={this.backButtonClick} />
           <Home onClick={this.navbarLinkClick} />
           {/* <Work /> */}
-          <Contact />
+          <Contact onClick={this.backButtonClick} />
         </div>
       </div>
     );

@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import profile from '../../assets/images/profile.jpg';
+import arrowRight from '../../assets/svg/arrow-right.svg';
 
-const About = () => {
+const About = ({ onClick }) => {
   return (
     <section className="about-component">
       <div className="about-content">
@@ -20,8 +22,13 @@ const About = () => {
           </div>
         </div>
       </div>
+      <img onClick={onClick} className="arrow-right" src={arrowRight} alt="Back button"/>
     </section>
   );
+};
+
+About.propTypes = {
+  onClick: PropTypes.func.isRequired
 };
 
 export default About;

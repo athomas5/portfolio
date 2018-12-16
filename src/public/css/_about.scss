@@ -5,7 +5,8 @@
   min-height: 100%;
   vertical-align: top;
   padding: $section-padding;
-  margin-top: 100px;
+  padding-top: calc(100px + #{$section-padding});
+  position: relative;
 
   .about-content {
     max-width: 500px;
@@ -47,5 +48,20 @@
     display: inline-block;
     width: calc(500px - 150px - 20px);
     @include section-text();
+  }
+
+  .arrow-right {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;;
+    right: 50px;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+
+    &:hover { 
+      opacity: .5; 
+      transition: .2s opacity ease-in-out;
+    }
   }
 }

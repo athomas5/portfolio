@@ -8,7 +8,12 @@
     width: 300vw;
     height: 100%;
     position: absolute;
-    left: 0%;
+    left: -100%;
+
+    &.home-active {
+      left: -100%;
+      transition: .8s left ease-in-out;
+    }
 
     &.about-active { 
       left: 0;
