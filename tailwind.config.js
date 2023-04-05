@@ -8,17 +8,30 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'fade-in': 'fade-in 0.7s ease',
-        'slide-up': 'slide-up 0.7s ease',
-        'slide-down': 'slide-down 0.7s ease',
+        'fade-in': 'fade-in 1s ease-out',
+        'slide-up-1': 'slide-up-1 1s ease-out',
+        'slide-up-2': 'slide-up-2 1.25s ease-out',
+        'slide-up-3': 'slide-up-3 1.5s ease-out',
+        'slide-down': 'slide-down 0.7s ease-out',
       },
       keyframes: {
         'fade-in': {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
         },
-        'slide-up': {
-          '0%': { opacity: 0, transform: 'translateY(50%)' },
+        'slide-up-1': {
+          '0%': { opacity: 0, transform: 'translateY(30%)' },
+          '25%': { opacity: 0, transform: 'translateY(30%)' },
+          '100%': { opacity: 1, transform: 'translateY(0%)' },
+        },
+        'slide-up-2': {
+          '0%': { opacity: 0, transform: 'translateY(30%)' },
+          '50%': { opacity: 0, transform: 'translateY(30%)' },
+          '100%': { opacity: 1, transform: 'translateY(0%)' },
+        },
+        'slide-up-3': {
+          '0%': { opacity: 0, transform: 'translateY(30%)' },
+          '75%': { opacity: 0, transform: 'translateY(30%)' },
           '100%': { opacity: 1, transform: 'translateY(0%)' },
         },
         'slide-down': {
