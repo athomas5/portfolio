@@ -3,6 +3,7 @@ import { Lato, Plus_Jakarta_Sans } from "@next/font/google";
 
 import Navbar from "@/components/Navbar";
 import Headline from "@/components/Headline";
+import Portfolio from "@/components/Portfolio";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ const Home = () => {
       >
         <Navbar />
         <Headline />
+        <Portfolio />
       </main>
     </>
   );

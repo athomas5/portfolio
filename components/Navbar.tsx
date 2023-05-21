@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav
       className={`${
         !hamburgerOpen ? "absolute w-[calc(100%-4rem)] h-[calc(100%-5rem)]" : ""
-      } grid grid-rows-[auto_1fr] grid-cols-[1fr_auto] font-medium bg-white animate-fade-in`}
+      } grid grid-rows-[auto_1fr] grid-cols-[1fr_auto] font-medium bg-white z-50 animate-fade-in`}
     >
       <a href="https://www.linkedin.com/in/andrethomas5/" target="_blank">
         andre.thomas
