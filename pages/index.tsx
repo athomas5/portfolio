@@ -1,19 +1,7 @@
 import Head from "next/head";
-import { Lato, Plus_Jakarta_Sans } from "@next/font/google";
 
-import Navbar from "@/components/Navbar";
 import Headline from "@/components/Headline";
-import Portfolio from "@/components/Portfolio";
-
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ["300", "400", "700"],
-});
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "700"],
-});
+import Portfolio from "@/components/portfolio/Portfolio";
 
 const Home = () => {
   return (
@@ -24,14 +12,8 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main
-        // className={`${lato.className} flex flex-col h-full py-10 px-8 md:py-10 md:px-20 mx-auto max-w-7xl`}
-        className={`${plusJakartaSans.className} flex flex-col h-full py-10 px-8 md:py-10 md:px-20 mx-auto max-w-7xl`}
-      >
-        <Navbar />
-        <Headline />
-        <Portfolio />
-      </main>
+      <Headline />
+      <Portfolio />
     </>
   );
 };

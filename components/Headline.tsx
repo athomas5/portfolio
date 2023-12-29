@@ -1,5 +1,3 @@
-import styles from "@/styles/Headline.module.scss";
-
 const Headline = () => {
   return (
     <div className="mt-[15%] text-black w-full md:w-[60%]">
